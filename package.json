@@ -1,0 +1,13 @@
+{
+  "name": "quiet-search-backend",
+  "version": "1.0.0",
+  "description": "Privacy-preserving meta-search backend for Quiet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
