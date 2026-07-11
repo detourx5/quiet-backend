@@ -79,8 +79,8 @@ function normalizeResults(serperData) {
 const server = http.createServer(async (req, res) => {
   const parsed = url.parse(req.url, true);
 
-  // CORS — restrict this to your own domain in production
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // CORS — restricted to the live frontend only
+  res.setHeader('Access-Control-Allow-Origin', 'https://detourx5.github.io');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
 
   if (req.method === 'OPTIONS') {
